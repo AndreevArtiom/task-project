@@ -25,3 +25,9 @@ def mark_done(task_id):
         if t["id"] == task_id:
             t["status"] = "done"
     save_tasks(tasks)
+
+def filter_by_status(status):
+    tasks = load_tasks()
+    filtered = [t for t in tasks if t["status"] == status]
+    for t in filtered:
+        print(f"[{t['status']}] {t['title']}")
