@@ -31,3 +31,8 @@ def filter_by_status(status):
     filtered = [t for t in tasks if t["status"] == status]
     for t in filtered:
         print(f"[{t['status']}] {t['title']}")
+
+def validate_priority(priority):
+    if priority not in ["low", "normal", "high"]:
+        raise ValueError("Неверный приоритет")
+    return priority
