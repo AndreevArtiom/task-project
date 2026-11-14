@@ -1,7 +1,7 @@
 import json
 import os
 
-DEFAULT_PRIORITY = "normal"
+DEFAULT_PRIORITY = "high" # настройка по умолчанию для ветки Б
 
 DATA_FILE = 'tasks.json'
 
