@@ -45,3 +45,5 @@ def sort_tasks_by_priority():
     tasks.sort(key=lambda x: priority_order.get(x.get("priority", "normal"), 2))
     for t in tasks:
         print(f"[{t.get('priority', 'normal')}] {t['title']}")
+
+print("ОШИБОЧНЫЙ КОД")
