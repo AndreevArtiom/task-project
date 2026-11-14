@@ -1,6 +1,8 @@
 import json
 import os
 
+DEFAULT_PRIORITY = "normal"
+
 DATA_FILE = 'tasks.json'
 
 def load_tasks():
